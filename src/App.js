@@ -4,7 +4,7 @@ import BookTable from './BookTable';
 import { Header } from './components/Header';
 import BookTableFetch from './BookTableFetch';
 import Home from './pages/Home';
-import Form from './pages/Form';
+import FormBook from './pages/FormBook';
 import NoPage from './components/NoPage';
 import {
   Routes,
@@ -23,7 +23,7 @@ function App() {
           {/* Componente da tela inicial */}
           <Route index element={<Home />} />
           {/* Componente de uma rota específica */}
-          <Route path="form" element={<Form />} />
+          <Route path="form" element={<FormBook />} />
           {/* Componente de uma rota específica */}
           <Route path="table" element={<Table />} />
           {/* Componente para quando não encontrar uma rota */}
