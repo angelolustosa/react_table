@@ -18,6 +18,12 @@ export default function Home() {
                 <li>
                     <Link to="/form">Form</Link>
                 </li>
+                <li>
+                    <Link to="/form-api">FormBook-API</Link>
+                </li>
+                <li>
+                    <Link to="/book">Book</Link>
+                </li>
             </ul>
         </>
     )

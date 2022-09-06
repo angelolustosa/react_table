@@ -11,6 +11,7 @@ import {
   Route
 } from "react-router-dom";
 import Table from './pages/Table';
+import RoutesConfig from './components/RoutesConfig';
 
 function App() {
   return (
@@ -19,19 +20,20 @@ function App() {
       <div className='container'>
         {/* <BookTable />
         <BookTableFetch /> */}
-        <Routes>
-          {/* Componente da tela inicial */}
-          <Route index element={<Home />} />
-          {/* Componente de uma rota específica */}
-          <Route path="form" element={<FormBook />} />
-          {/* Componente de uma rota específica */}
-          <Route path="table" element={<Table />} />
-          {/* Componente para quando não encontrar uma rota */}
-          <Route path="*" element={<NoPage />} />
-        </Routes>
+        <RoutesConfig />
       </div>
     </div>
   );
 }
 
 export default App;
+
+
+/*
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="form" element={<FormBook />} />
+          <Route path="table" element={<Table />} />
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+*/

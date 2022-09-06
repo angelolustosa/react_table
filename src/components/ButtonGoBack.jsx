@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function ButtonGoBack() {
     const navigate = useNavigate()
 
-    const goHome = () => navigate("/");
+    const goHome = () => navigate("/home");
 
     return (
         <button onClick={goHome}>
